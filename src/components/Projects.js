@@ -65,9 +65,9 @@ const Projects = () => {
               });
             }}
           >
-            <h3 className="neon-glow-bf806b" style={{ fontSize: 'clamp(1.2rem, 3vw, 1.5rem)' }}>Aesop Advertising Campaign</h3>
+            <h3 className="neon-glow-bf806b" style={{ fontSize: 'clamp(1.2rem, 3vw, 1.5rem)' }}>Main Lead Actress</h3>
             <p style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' }}>
-            A one-month advertising campaign in Bangkok to promote Aesop
+            Rangsit University Campus Tour Short Film
             </p>
           </div>
           <div
@@ -97,9 +97,9 @@ const Projects = () => {
               });
             }}
           >
-            <h3 className="neon-glow-bf806b" style={{ fontSize: 'clamp(1.2rem, 3vw, 1.5rem)' }}>Amazon</h3>
+            <h3 className="neon-glow-bf806b" style={{ fontSize: 'clamp(1.2rem, 3vw, 1.5rem)' }}>Creative Content Video For Dior</h3>
             <p style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' }}>
-            A vibrant marketing push for Cafe Amazon’s "Butterfly Sunrise
+            A Commercial Video For Dior J'adore
             </p>
           </div>
           <div
@@ -112,6 +112,39 @@ const Projects = () => {
               cursor: 'pointer',
             }}
             onClick={() => handleProjectClick('3')}
+            onMouseEnter={(e) => {
+              gsap.to(e.currentTarget, {
+                scale: 1.05,
+                boxShadow: '0 0 20px #0097b2, 0 0 40px #0097b2',
+                duration: 0.3,
+                ease: 'power2.out',
+              });
+            }}
+            onMouseLeave={(e) => {
+              gsap.to(e.currentTarget, {
+                scale: 1,
+                boxShadow: '0 0 10px #0097b2, 0 0 20px #0097b2, inset 0 0 10px #0097b2',
+                duration: 0.3,
+                ease: 'power2.out',
+              });
+            }}
+          >
+            <h3 className="neon-glow-bf806b" style={{ fontSize: 'clamp(1.2rem, 3vw, 1.5rem)' }}>Aesop Advertising Campaign</h3>
+            <p style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' }}>
+            A one-month advertising campaign in Bangkok to promote Aesop
+            </p>
+          </div>
+
+          <div
+            className="project-card neon-border-0097b2"
+            style={{
+              padding: '1rem',
+              borderRadius: '10px',
+              border: '2px solid #0097b2',
+              background: 'rgba(0, 151, 178, 0.1)',
+              cursor: 'pointer',
+            }}
+            onClick={() => handleProjectClick('4')}
             onMouseEnter={(e) => {
               gsap.to(e.currentTarget, {
                 scale: 1.05,
@@ -144,39 +177,6 @@ const Projects = () => {
               background: 'rgba(0, 151, 178, 0.1)',
               cursor: 'pointer',
             }}
-            onClick={() => handleProjectClick('4')}
-            onMouseEnter={(e) => {
-              gsap.to(e.currentTarget, {
-                scale: 1.05,
-                boxShadow: '0 0 20px #0097b2, 0 0 40px #0097b2',
-                duration: 0.3,
-                ease: 'power2.out',
-              });
-            }}
-            onMouseLeave={(e) => {
-              gsap.to(e.currentTarget, {
-                scale: 1,
-                boxShadow: '0 0 10px #0097b2, 0 0 20px #0097b2, inset 0 0 10px #0097b2',
-                duration: 0.3,
-                ease: 'power2.out',
-              });
-            }}
-          >
-            <h3 className="neon-glow-bf806b" style={{ fontSize: 'clamp(1.2rem, 3vw, 1.5rem)' }}>Sook Siam</h3>
-            <p style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' }}>
-              Short film showcasing storytelling skills.
-            </p>
-          </div>
-
-          <div
-            className="project-card neon-border-0097b2"
-            style={{
-              padding: '1rem',
-              borderRadius: '10px',
-              border: '2px solid #0097b2',
-              background: 'rgba(0, 151, 178, 0.1)',
-              cursor: 'pointer',
-            }}
             onClick={() => handleProjectClick('5')}
             onMouseEnter={(e) => {
               gsap.to(e.currentTarget, {
@@ -195,9 +195,9 @@ const Projects = () => {
               });
             }}
           >
-            <h3 className="neon-glow-bf806b" style={{ fontSize: 'clamp(1.2rem, 3vw, 1.5rem)' }}>Project 5</h3>
+            <h3 className="neon-glow-bf806b" style={{ fontSize: 'clamp(1.2rem, 3vw, 1.5rem)' }}>Amazon</h3>
             <p style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' }}>
-              Short film showcasing storytelling skills.
+            Creative Marketing Content for Amazon Cafe
             </p>
           </div>
 
@@ -228,9 +228,9 @@ const Projects = () => {
               });
             }}
           >
-            <h3 className="neon-glow-bf806b" style={{ fontSize: 'clamp(1.2rem, 3vw, 1.5rem)' }}>Project 6</h3>
+            <h3 className="neon-glow-bf806b" style={{ fontSize: 'clamp(1.2rem, 3vw, 1.5rem)' }}>Seminar</h3>
             <p style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' }}>
-              Short film showcasing storytelling skills.
+            Presentation About The Power and Influence about Advertising
             </p>
           </div>
 
@@ -261,12 +261,45 @@ const Projects = () => {
               });
             }}
           >
-            <h3 className="neon-glow-bf806b" style={{ fontSize: 'clamp(1.2rem, 3vw, 1.5rem)' }}>Project 7</h3>
+            <h3 className="neon-glow-bf806b" style={{ fontSize: 'clamp(1.2rem, 3vw, 1.5rem)' }}>Talent Show</h3>
             <p style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' }}>
-              Short film showcasing storytelling skills.
+            Great Gatsby Night Event at Rangsit University
             </p>
           </div>
 
+
+          <div
+            className="project-card neon-border-0097b2"
+            style={{
+              padding: '1rem',
+              borderRadius: '10px',
+              border: '2px solid #0097b2',
+              background: 'rgba(0, 151, 178, 0.1)',
+              cursor: 'pointer',
+            }}
+            onClick={() => handleProjectClick('8')}
+            onMouseEnter={(e) => {
+              gsap.to(e.currentTarget, {
+                scale: 1.05,
+                boxShadow: '0 0 20px #0097b2, 0 0 40px #0097b2',
+                duration: 0.3,
+                ease: 'power2.out',
+              });
+            }}
+            onMouseLeave={(e) => {
+              gsap.to(e.currentTarget, {
+                scale: 1,
+                boxShadow: '0 0 10px #0097b2, 0 0 20px #0097b2, inset 0 0 10px #0097b2',
+                duration: 0.3,
+                ease: 'power2.out',
+              });
+            }}
+          >
+            <h3 className="neon-glow-bf806b" style={{ fontSize: 'clamp(1.2rem, 3vw, 1.5rem)' }}>Sook Siam</h3>
+            <p style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' }}>
+            Promotion Video for Sook Siam
+            </p>
+          </div>
 
         </div>
       </div>

@@ -8,7 +8,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 //pdf files
 import AesopPDF from '../assets/Aesop.pdf';
 import AmazonPDF from '../assets/Amazon.pdf';
-
+import diorpdf from '../assets/dior.pdf';
+import talentpdf from '../assets/ts.pdf';
+import seminarPDF from '../assets/seminar.pdf';
 
 //images
 import Aesop1 from '../assets/images/Aesop1.jpg';
@@ -17,11 +19,21 @@ import Megoody from '../assets/images/megoody.png';
 import Amazon1 from '../assets/images/Amazon1.jpg';
 import Amazon2 from '../assets/images/Amazon2.png';
 import Aesop2 from '../assets/images/Aesop2.jpg';
+import Sooksiam from '../assets/images/sooksiam.jpg';
+import dior from '../assets/images/dior.jpg';
+import seminar from '../assets/images/seminar.jpg';
+import seminar1 from '../assets/images/seminar1.jpg';
+import seminar2 from '../assets/images/seminar2.jpg';
+import her from '../assets/images/her.jpg';
+import talent1 from '../assets/images/talent1.jpg';
+
+
+
 
 
 const projectsData = [
   {
-    id: '1',
+    id: '3',
     title: 'Aesop Advertising Campaign',
     description: 'A one-month advertising campaign in Bangkok to promote Aesop’s Sage & Zinc Facial Hydrating Lotion with SPF15',
     images: [Aesop1, Aesop2], // Multiple images
@@ -31,42 +43,58 @@ const projectsData = [
     ],
   },
   {
-    id: '2',
+    id: '5',
     title: 'Amazon',
     description: 'A vibrant marketing push for Cafe Amazon’s "Butterfly Sunrise," fusing innovative flavors with a nature-inspired aesthetic to captivate a global audience.',
     images: [Amazon, Amazon1, Amazon2], // Single image
     link: AmazonPDF,
   },
   {
-    id: '3',
+    id: '4',
     title: 'Megoody Thailand',
     description: 'Seek-/+Found Project',
     images: [Megoody], // Two images
-    link: [
-      { label: 'View Canva', url: 'https://www.canva.com/design/DAFoa-DmsDc/6GuVwUt4_yEpTMe8UGcthA/edit?utm_content=DAFoa-DmsDc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' },
-      { label: 'View Report', url: 'https://www.example.com/project3-script.pdf' },
-    ],
+    link: 'https://www.instagram.com/p/CvufXuzNPOy/?utm_source=ig_web_button_share_sheet' ,
+      
+    
   },
   {
-    id: '4',
+    id: '8',
     title: 'Sook Siam',
-    description: 'Short film showcasing storytelling skills.',
-    images: [], // No images yet, add as needed
-    link: 'https://www.example.com/project4',
-  },
-  {
-    id: '5',
-    title: 'Seminar',
-    description: 'Short film showcasing storytelling skills.',
-    images: [], // No images yet, add as needed
-    link: 'https://www.example.com/project5',
+    description: 'Create Video for Sook Siam Promotion',
+    images: [Sooksiam], 
+    link: 'https://youtu.be/7XSwd28Uz2g?feature=shared',
   },
   {
     id: '6',
-    title: 'Project 6',
-    description: 'Short film showcasing storytelling skills.',
-    images: [], // No images yet, add as needed
-    link: 'https://www.example.com/project6',
+    title: 'Seminar',
+    description: 'Present about "The Power and Influence about Advertising"',
+    images: [seminar,seminar1,seminar2], 
+    link: seminarPDF,
+  },
+  {
+    id: '2',
+    title: 'Creative Content Video',
+    description: "Shoot a Commercial Video for Dior J'adore",
+    images: [dior], 
+    link: [
+        { label: 'View PDF', url: diorpdf },
+        { label: 'View Video', url: 'https://youtu.be/lwLf-l0Q7HA' },
+      ],
+  },
+  {
+    id: '7',
+    title: 'Talent Show',
+    description: "An Event for Great Gatsby Night at Rangsit University",
+    images: [talent1], 
+    link: talentpdf,
+  },
+  {
+    id: '1',
+    title: "Main Lead Actress for 'HER'",
+    description: "Rangsit University Campus Tour Short Film",
+    images: [her],
+    link: 'https://www.facebook.com/share/v/1WLGNnDCef/?mibextid=wwXIfr',
   },
 ];
 
