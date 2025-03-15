@@ -32,9 +32,9 @@ const AcademicRecord = () => {
           Academic Record
         </h2>
         <p className="neon-glow-0097b2" style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' }}>
-          Bachelor of Communication Arts<br />Rangsit University, 202X - Present
+          Bachelor of Communication Arts<br />Rangsit University, 2022 - Present
         </p>
-        <p style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' }}>GPA: X.XX</p>
+        <p style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' }}>GPA: 3.70</p>
       </div>
     </section>
   );

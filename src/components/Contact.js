@@ -1,18 +1,46 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaInstagram, FaFacebook, FaLinkedin, FaLine } from 'react-icons/fa';
-import '../styles/app.css'; // Ensure this is imported if styles are in app.css
+import '../styles/app.css';
 
 const Contact = () => {
+  const contactRef = useRef();
+
   // Replace these with your friend's actual details
   const contactInfo = {
-    phone: '+66 123 456 7890',
-    email: 'friend@example.com',
-    address: '123 Bangkok, Thailand',
-    instagram: 'https://instagram.com/friendusername',
-    facebook: 'https://facebook.com/friendusername',
-    linkedin: 'https://linkedin.com/in/friendusername',
-    line: 'https://line.me/ti/p/friendlineid',
+    phone: '+66 806616373',
+    email: 'khamoo59@gmail.com',
+    address: '52/291 หมู่บ้านเมืองเอก หมู่ที่ 7, ต.หลักหก, อ.เมือง, Pathum Thani 12000, Thailand',
+    instagram: 'https://www.instagram.com/k.kham_oo?igsh=ZWEydzB0M3pvcW5w&utm_source=qr',
+    facebook: 'https://www.facebook.com/share/15BGJCyXca/?mibextid=wwXIfr',
+    linkedin: 'https://www.linkedin.com/in/kham-oo-6b1362342/',
+    line: 'https://line.me/ti/p/DOSIm-Jpmy',
   };
+
+  // GSAP animation with ScrollTrigger
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const items = contactRef.current.children;
+    gsap.fromTo(
+      items,
+      { opacity: 0, scale: 0.8 },
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: contactRef.current,
+          start: 'top 80%', // Start when top of section is 80% from top of viewport
+          end: 'bottom 20%', // End when bottom of section is 20% from top
+          toggleActions: 'play none none reverse', // Play on enter, reverse on leave
+        },
+      }
+    );
+  }, []);
 
   // Function to handle link navigation
   const linkTo = (url) => {
@@ -25,7 +53,7 @@ const Contact = () => {
         <h2 className="neon-glow-bf806b" style={{ fontSize: 'clamp(1.5rem, 4vw, 2rem)', marginBottom: '1rem' }}>
           Contact Me
         </h2>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center' }}>
+        <div ref={contactRef} style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center' }}>
           {/* Phone - Icon + Text */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <FaPhone
