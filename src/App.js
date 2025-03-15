@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Hero from './components/Hero';
+import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
+import AcademicRecord from './components/AcademicRecord';
+import Contact from './components/Contact';
+import ProjectDetail from './components/ProjectDetail';
+import './styles/app.css';
 
-function App() {
+
+gsap.registerPlugin(ScrollTrigger);
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router style={{ padding: '0.2rem'  }}>
+      <div>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <AboutMe />
+                <Projects />
+                <AcademicRecord />
+                <Contact />
+              </>
+            }
+          />
+          <Route path="/project/:id" element={<ProjectDetail />} />
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

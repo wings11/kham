@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none !important;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 16px;
+}
+
+section {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Neon glow utility */
+.neon-glow-bf806b {
+  text-shadow: 0 0 5px #bf806b, 0 0 10px #bf806b, 0 0 20px #bf806b;
+}
+
+.neon-glow-0097b2 {
+  text-shadow: 0 0 5px #0097b2, 0 0 10px #0097b2, 0 0 20px #0097b2;
+}
+
+.neon-border-bf806b {
+  box-shadow: 0 0 10px #bf806b, 0 0 20px #bf806b, inset 0 0 10px #bf806b;
+}
+
+.neon-border-0097b2 {
+  box-shadow: 0 0 10px #0097b2, 0 0 20px #0097b2, inset 0 0 10px #0097b2;
+}
+
+/* Add spacer to extend scrollable height */
+body::after {
+  content: '';
+  display: block;
+  height: 10vh; /* Extra space at the bottom */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  section {
+    padding: 4rem 2rem;
+  }
+}
+
+/* Existing styles remain unchanged, add this at the bottom */
+.carousel-arrow {
+  display: none; /* Hidden by default on narrow screens */
+}
+
+@media (min-width: 768px) {
+  .carousel-arrow {
+    display: block; /* Show arrows on wide screens */
+  }
+}
+
+.carousel-dots span:hover {
+  background: '#007a91'; /* Slightly darker hover effect */
+}
