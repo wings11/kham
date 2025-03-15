@@ -253,7 +253,7 @@ const ProjectDetail = () => {
               <>
                 <img
                   src={project.images[currentImageIndex]}
-                  alt={`${project.title} Image ${currentImageIndex + 1}`}
+                  alt={`${project.title} img ${currentImageIndex + 1}`}
                   className="neon-border-0097b2"
                   onDragStart={(e) => e.preventDefault()}
                   style={{
