@@ -33,7 +33,7 @@ const AboutMe = () => {
           About Me
         </h2>
         <p style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)', lineHeight: '1.6' }}>
-          Hi, I’m Kham, a passionate Communication Arts student at Rangsit University. I specialize in creative storytelling and innovative design.
+          Hi, I’m Kham, a passionate Communication Arts student at Rangsit University. Here will be added "About Me".
         </p>
         <a
           href={cvFile}
