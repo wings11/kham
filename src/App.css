@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+.neon-glow-0097b2 {
+  text-shadow: 0 0 5px #0097b2, 0 0 10px #0097b2;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -23,6 +27,8 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+
 
 .App-link {
   color: #61dafb;
