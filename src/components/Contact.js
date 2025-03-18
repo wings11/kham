@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaInstagram, FaFacebook, FaLinkedin, FaLine } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaInstagram, FaLinkedin, FaLine, FaTiktok } from 'react-icons/fa';
 import '../styles/app.css';
 
 const Contact = () => {
@@ -13,7 +13,7 @@ const Contact = () => {
     email: 'khamoo59@gmail.com',
     address: '52/291 หมู่บ้านเมืองเอก หมู่ที่ 7, ต.หลักหก, อ.เมือง, Pathum Thani 12000, Thailand',
     instagram: 'https://www.instagram.com/k.kham_oo?igsh=ZWEydzB0M3pvcW5w&utm_source=qr',
-    facebook: 'https://www.facebook.com/share/15BGJCyXca/?mibextid=wwXIfr',
+    tiktok: 'https://www.tiktok.com/@kham.oo12?_t=ZS-8umLdVnyazX&_r=1',
     linkedin: 'https://www.linkedin.com/in/kham-oo-6b1362342/',
     line: 'https://line.me/ti/p/DOSIm-Jpmy',
   };
@@ -91,10 +91,10 @@ const Contact = () => {
               className="neon-glow-0097b2"
               onClick={() => linkTo(contactInfo.instagram)}
             />
-            <FaFacebook
+            <FaTiktok
               style={{ fontSize: '2rem', cursor: 'pointer' }}
               className="neon-glow-0097b2"
-              onClick={() => linkTo(contactInfo.facebook)}
+              onClick={() => linkTo(contactInfo.tiktok)}
             />
             <FaLinkedin
               style={{ fontSize: '2rem', cursor: 'pointer' }}
