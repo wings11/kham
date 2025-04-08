@@ -10,7 +10,7 @@ const Contact = () => {
   // Replace these with your friend's actual details
   const contactInfo = {
     phone: '+66 806616373',
-    email: 'khamoo59@gmail.com',
+    email: 'hlaingkhamoo59@gmail.com',
     address: '52/291 หมู่บ้านเมืองเอก หมู่ที่ 7, ต.หลักหก, อ.เมือง, Pathum Thani 12000, Thailand',
     instagram: 'https://www.instagram.com/k.kham_oo?igsh=ZWEydzB0M3pvcW5w&utm_source=qr',
     tiktok: 'https://www.tiktok.com/@kham.oo12?_t=ZS-8umLdVnyazX&_r=1',

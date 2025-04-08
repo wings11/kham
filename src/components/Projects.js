@@ -162,9 +162,9 @@ const Projects = () => {
               });
             }}
           >
-            <h3 className="neon-glow-bf806b" style={{ fontSize: 'clamp(1.2rem, 3vw, 1.5rem)' }}>Megoody Thailand</h3>
+            <h3 className="neon-glow-bf806b" style={{ fontSize: 'clamp(1.2rem, 3vw, 1.5rem)' }}>Together We ReLeaf</h3>
             <p style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' }}>
-            Seek-/+Found Project
+            Plant The Globe
             </p>
           </div>
 

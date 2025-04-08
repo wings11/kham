@@ -15,7 +15,9 @@ import seminarPDF from '../assets/seminar.pdf';
 //images
 import Aesop1 from '../assets/images/Aesop1.jpg';
 import Amazon from '../assets/images/amazon.png';
-import Megoody from '../assets/images/megoody.png';
+import fund from '../assets/images/megoody.jpg';
+import fund3 from '../assets/images/megoody3.jpg';
+import fund2 from '../assets/images/megoody2.jpg';
 import Amazon1 from '../assets/images/Amazon1.jpg';
 import Amazon2 from '../assets/images/Amazon2.png';
 import Aesop2 from '../assets/images/Aesop2.jpg';
@@ -51,10 +53,10 @@ const projectsData = [
   },
   {
     id: '4',
-    title: 'Megoody Thailand',
-    description: 'Seek-/+Found Project',
-    images: [Megoody], // Two images
-    link: 'https://www.instagram.com/p/CvufXuzNPOy/?utm_source=ig_web_button_share_sheet' ,
+    title: 'Together We ReLeaf – Fundraising Campaign',
+    description: 'Organized a sustainability-focused fundraising campaign aimed at supporting reforestation efforts through the One Tree Planted organization. The campaign successfully raised funds to plant 50 trees, promoting environmental awareness and encouraging community involvement in climate action.',
+    images: [fund,fund2, fund3], // Two images
+    link: 'https://www.instagram.com/p/C5V928SrXNF/?img_index=4&igsh=Z3oxMDE1ajhwdXBs' ,
       
     
   },
