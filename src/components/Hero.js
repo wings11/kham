@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import khamPhoto from '../assets/images/kham-photo.jpg';
+import khamPhoto from '../assets/images/kham-photo.webp';
 
 const Hero = () => {
   const textRef = useRef();
@@ -68,6 +68,7 @@ const Hero = () => {
           ref={photoRef}
           src={khamPhoto}
           alt="Kham"
+          loading='lazy'
           className="neon-border-0097b2"
           style={{
             width: '100%',

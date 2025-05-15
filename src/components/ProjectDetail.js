@@ -13,21 +13,21 @@ import talentpdf from '../assets/ts.pdf';
 import seminarPDF from '../assets/seminar.pdf';
 
 //images
-import Aesop1 from '../assets/images/Aesop1.jpg';
-import Amazon from '../assets/images/amazon.png';
-import fund from '../assets/images/megoody.jpg';
-import fund3 from '../assets/images/megoody3.jpg';
-import fund2 from '../assets/images/megoody2.jpg';
-import Amazon1 from '../assets/images/Amazon1.jpg';
-import Amazon2 from '../assets/images/Amazon2.png';
-import Aesop2 from '../assets/images/Aesop2.jpg';
-import Sooksiam from '../assets/images/sooksiam.jpg';
-import dior from '../assets/images/dior.jpg';
-import seminar from '../assets/images/seminar.jpg';
-import seminar1 from '../assets/images/seminar1.jpg';
-import seminar2 from '../assets/images/seminar2.jpg';
-import her from '../assets/images/her.jpg';
-import talent1 from '../assets/images/talent1.jpg';
+import Aesop1 from '../assets/images/Aesop1.webp';
+import Amazon from '../assets/images/amazon.webp';
+import fund from '../assets/images/megoody.webp';
+import fund3 from '../assets/images/megoody3.webp';
+import fund2 from '../assets/images/megoody2.webp';
+import Amazon1 from '../assets/images/Amazon1.webp';
+import Amazon2 from '../assets/images/Amazon2.webp';
+import Aesop2 from '../assets/images/Aesop2.webp';
+import Sooksiam from '../assets/images/sooksiam.webp';
+import dior from '../assets/images/dior.webp';
+import seminar from '../assets/images/seminar.webp';
+import seminar1 from '../assets/images/seminar1.webp';
+import seminar2 from '../assets/images/seminar2.webp';
+import her from '../assets/images/her.webp';
+import talent1 from '../assets/images/talent1.webp';
 
 
 
