@@ -285,6 +285,7 @@ const ProjectDetail = () => {
                   src={project.images[currentImageIndex]}
                   alt={`${project.title} img ${currentImageIndex + 1}`}
                   className="neon-border-0097b2"
+                  loading="lazy"
                   onDragStart={(e) => e.preventDefault()}
                   style={{
                     width: '100%',
@@ -374,6 +375,7 @@ const ProjectDetail = () => {
               <img
                 src="https://via.placeholder.com/600x400"
                 alt="Placeholder"
+                loading="lazy"
                 className="neon-border-0097b2"
                 onDragStart={(e) => e.preventDefault()}
                 style={{
